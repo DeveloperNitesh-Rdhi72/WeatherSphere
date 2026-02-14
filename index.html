@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather web app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <video src="assets/coffee-shop.3840x2160.mp4" autoplay muted loop playsinline class="video-hide" id="v1"></video>
+    <video src="assets/itachi.mp4" autoplay muted loop playsinline id="v2"></video>
+
+    <section class="container">
+        <div class="search">
+            <input type="text" placeholder="search location" class="city">
+            <button class="fa-solid fa-magnifying-glass search-btn"></button>
+        </div>
+        <div class="weather">
+            <img src="assets/rain-with-sun.gif" class="img1">
+            <div class="contryname-temp">
+                <span class="c-Name">Lucknow</span>
+                <span class="degree">30&deg;C</span>
+            </div>
+            <p class="about-weather" id="weather-dis">Weather discription</p>
+        </div>
+        <div class="humidity-wind">
+            <div class="humidity">
+                <img src="assets/humid.gif">
+                <div>
+                    <span class="about-weather percentage" id="humid-percent">10%</span>
+                    <span class="about-weather humid">Humidity</span>
+                </div>
+            </div>
+            <div class="humidity">
+                <img src="assets/wind-turbine.gif">
+                <div>
+                    <span class="about-weather percentage wind" id="wind-speed">12Km/H</span>
+                    <span class="about-weather humid">Wind speed</span>
+                </div>
+            </div>
+        </div>
+        <div class="other-contry">
+            <img src="assets/rain.gif" id="weatherimg">
+            <div class="country-name-temp">
+                <div>
+                    <span class="country-name">Delhi</span>
+                    <span class="dis">sunny</span>
+                </div>
+                <span class="temp">10&deg;C</span>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
